@@ -1,0 +1,143 @@
+
+
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* для IE6-7 */
+
+.clearfix {
+    zoom: 1;
+}
+
+
+
+
+body{
+    font-family: monospace;
+    background-image: url("../img/bicycles.png");
+    background-color: #c7b39b;
+}
+h1{
+    text-align: center;
+    color: darkblue;
+}
+a {
+    margin-top: 10px;
+}
+.container {
+    margin: 0 auto;
+    background: #E6E6E6;
+    width: 100%;
+    max-width: 960px;
+    padding: 0;
+
+
+}
+.container-img  {
+    justify-content: space-around;
+    /*display: flex;*/
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap; /*перенос на след строку*/
+}
+img {
+    width: 220px;
+    height: 220px;
+}
+
+figure {
+    margin: 0;
+    display: inline-block;
+    width: 310px;
+    text-align: center;
+}
+
+figcaption {
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+footer{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+    background: #D3D3D3;
+    color: #666f80;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.pagination {
+    padding: 20px;
+    clear:both;
+}
+.pagination ul {
+    text-align: center;
+}
+.pagination ul li {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: middle;
+    line-height: 12px;
+    padding: 2px 6px;
+}
+.pagination ul li a, .pagination ul li span {
+    color: #666f80;
+}
+.pagination ul li a:hover, .pagination ul li span:hover {
+    background: #f5f5f5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+.pagination ul li a.prev, .pagination ul li a.next {
+    font-weight: bold;
+}
+.pagination ul li.active a, .pagination ul li.active span {
+    color: #2d4c80;
+    font-size: 16px;
+    font-weight: bold;
+}
+.pagination ul li.active a:hover, .pagination ul li.active span:hover {
+    background: none;
+}
+/*@media screen and (max-width: 870px){*/
+    /*figure{*/
+        /*display: block;*/
+        /*width: 100%;*/
+        /*text-align: left;*/
+    /*}*/
+    /*h1, p{*/
+        /*text-align: left;*/
+        /*width: 100%;*/
+    /*}*/
+    /*img{*/
+        /*width: 170px;*/
+        /*height: 170px;*/
+    /*}*/
+/*}*/
+/*@media screen and (max-width: 630px){*/
+    /*figure{*/
+    /*display: block;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+
+    /*}*/
+    /*h1, p{*/
+    /*text-align: center;*/
+    /*width: 100%;*/
+    /*}*/
+    /*img{*/
+        /*width: 200px;*/
+        /*height: 200px;*/
+    /*}*/
+/*}*/
+
